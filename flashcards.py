@@ -11,6 +11,8 @@ flashcards = [
 ]
 
 # State variable
+current_card = 0
+showing_answer = False
 
 
 # Functions
@@ -23,4 +25,5 @@ flashcards = [
 
 
 # Run program
+
 
