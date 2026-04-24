@@ -32,11 +32,23 @@ def next_card():
 
 
 # Window setup
-
+root = tk.Tk()
+root.title("Flashcards")
+root.geometry("400x300")
 
 # UI elements
+card_text = tk.Label(root, text = flashcards[current_card][0], font = ("Arial", 18), wraplength = 350)
+card_text.pack(pady=40)
+
+# AI told me to use a comma instead of a period after "Flip". Silly mistake!
+flip_button = tk.Button(root, text="Flip", command = flip_card)
+flip_button.pack()
+
+next_button = tk.Button(root, text = "Flip", command = flip_card)
+next_button.pack(pady=10)
 
 
 # Run program
+root.mainloop()
 
 
