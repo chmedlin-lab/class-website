@@ -14,8 +14,12 @@ flashcards = [
 current_card = 0
 showing_answer = False
 
-
 # Functions
+def flip_card():
+    global showing_answer
+    if showing_answer:
+        card_text.config(text=flashcards[current_card][0])
+        showing_answer = False
 
 
 # Window setup
