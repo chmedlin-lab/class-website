@@ -27,7 +27,7 @@ def flip_card():
 def next_card():
     global current_card, showing_answer
     current_card = (current_card + 1) % len(flashcards)
-    card_text.config(text=flashcards[current_card]{0})
+    card_text.config(text=flashcards[current_card][0])
     showing_answer = False
 
 
