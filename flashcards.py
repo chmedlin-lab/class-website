@@ -6,8 +6,6 @@ flashcards = [
     ("Slope intercept form", "y=mx+b"),
     ("Standard form", "Ax+Bx=Cx"),
     ("Point-slope form", "y-y1 = m(x-x1)")
-    ("Slope", "A measure of the steepness and direction of a line")
-    ("Rate of Change", "A ratio that compares the amount of change in a dependent variable to the amount of change in an independent variable.") 
 ]
 
 # State variable
@@ -44,7 +42,7 @@ card_text.pack(pady=40)
 flip_button = tk.Button(root, text="Flip", command = flip_card)
 flip_button.pack()
 
-next_button = tk.Button(root, text = "Flip", command = flip_card)
+next_button = tk.Button(root, text = "Next", command = next_card)
 next_button.pack(pady=10)
 
 
