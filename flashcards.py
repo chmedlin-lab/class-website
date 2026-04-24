@@ -20,6 +20,15 @@ def flip_card():
     if showing_answer:
         card_text.config(text=flashcards[current_card][0])
         showing_answer = False
+    else:
+        card_text.config(text=flashcards[current_card][1])
+        showing_answer = True
+
+def next_card():
+    global current_card, showing_answer
+    current_card = (current_card + 1) % len(flashcards)
+    card_text.config(text=flashcards[current_card]{0})
+    showing_answer = False
 
 
 # Window setup
